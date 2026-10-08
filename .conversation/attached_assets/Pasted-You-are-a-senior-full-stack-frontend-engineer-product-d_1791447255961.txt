@@ -1,0 +1,2218 @@
+You are a senior full-stack frontend engineer, product designer, luxury real-estate UX designer, motion designer, and creative developer.
+
+BUILD THE ACTUAL WEBSITE NOW.
+
+Do not just explain what you would build.
+Do not give me a plan first.
+Do not return only code snippets.
+Do not create a static mockup.
+
+Create the project inside Replit, write all required code, run it, inspect the actual rendered result, fix errors, test the interactions, and polish the final UI until it is presentation-ready.
+
+============================================================
+PROJECT
+============================================================
+
+Build a premium real-estate property discovery platform for a fictional portfolio/demo brand:
+
+VÉRA REALTY
+
+Tagline:
+
+PROPERTY.
+PERSPECTIVE.
+POSSIBILITY.
+
+This is a fictional demo website created to showcase my frontend development and design capabilities to real estate businesses.
+
+The final website must look like it was created by a premium international digital agency.
+
+It must feel:
+
+- luxurious
+- modern
+- editorial
+- sophisticated
+- trustworthy
+- cinematic
+- conversion-focused
+- highly interactive
+- premium
+- easy to use
+
+Do NOT make it look like a generic real-estate template.
+
+============================================================
+PRIMARY BUSINESS GOAL
+============================================================
+
+The website should be designed around a real estate user's journey:
+
+DISCOVER
+→ SEARCH
+→ FILTER
+→ SHORTLIST
+→ COMPARE
+→ VIEW PROPERTY
+→ UNDERSTAND LOCATION
+→ CALCULATE FINANCING
+→ CONTACT AGENT
+→ SCHEDULE A VISIT
+
+The main business goal is lead generation.
+
+Primary CTAs:
+
+EXPLORE PROPERTIES
+VIEW PROPERTY
+SCHEDULE A VISIT
+TALK TO AN EXPERT
+LIST YOUR PROPERTY
+
+============================================================
+CORE CREATIVE DIRECTION
+============================================================
+
+Create a high-end editorial real-estate experience.
+
+Think:
+
+Luxury property magazine
+Premium real-estate brokerage
+Architectural publication
+Modern property discovery platform
+Luxury residential campaign
+
+Visual feeling:
+
+Quiet luxury
+Modern architecture
+Refined
+Confident
+Minimal
+Expensive
+Editorial
+Cinematic
+
+Do NOT use:
+
+- generic Bootstrap layouts
+- cheap property templates
+- overly rounded cards
+- excessive gradients
+- neon
+- excessive glassmorphism
+- random 3D
+- excessive shadows
+- giant colorful icons
+- childish animation
+- SaaS-looking UI
+- e-commerce-looking property cards
+
+Use strong photography, typography, composition, spacing and motion.
+
+============================================================
+TECH STACK
+============================================================
+
+Use a modern production-ready frontend stack supported by Replit.
+
+Preferred:
+
+React
+TypeScript
+Vite
+Tailwind CSS
+
+Use Framer Motion for animation.
+
+Use React Router for pages/routes.
+
+Use Lucide React for icons.
+
+Use localStorage for frontend persistence where useful.
+
+Keep dependencies reasonable.
+
+Do not introduce unnecessary libraries.
+
+============================================================
+APPLICATION STRUCTURE
+============================================================
+
+Create a clean architecture such as:
+
+src/
+  components/
+    Navbar
+    Hero
+    SearchPanel
+    FeaturedProperties
+    PropertyCard
+    PropertyGrid
+    PropertyFilters
+    PropertyMap
+    PropertyDetail
+    PropertyGallery
+    PropertyFacts
+    Amenities
+    LocationInsights
+    MortgageCalculator
+    AgentCard
+    VisitScheduler
+    ComparePanel
+    FavoritesPanel
+    PropertyCategories
+    Locations
+    InvestmentSection
+    SellProperty
+    PropertyValuation
+    Insights
+    Testimonials
+    FAQ
+    FinalCTA
+    Footer
+
+  pages/
+    Home
+    Properties
+    PropertyDetails
+    Compare
+    Favorites
+    Contact
+
+  data/
+    properties
+    locations
+    agents
+    amenities
+    testimonials
+    faq
+    articles
+
+  config/
+    site
+
+  hooks/
+    useFavorites
+    useCompare
+    useReducedMotion
+    useMediaQuery
+
+  types/
+    property
+    agent
+    booking
+
+Use reusable components.
+
+Use TypeScript interfaces.
+
+Keep data separate from UI.
+
+============================================================
+BRAND / VISUAL SYSTEM
+============================================================
+
+Brand:
+
+VÉRA REALTY
+
+Suggested tagline:
+
+PROPERTY.
+PERSPECTIVE.
+POSSIBILITY.
+
+Color palette:
+
+Primary background:
+#0A0A09
+
+Secondary:
+#121210
+
+Card:
+#181815
+
+Light section:
+#F2EFE8
+
+Warm white:
+#F7F4EC
+
+Muted:
+#ABA69A
+
+Accent:
+muted champagne / warm sand
+
+Optional architectural accent:
+deep olive / stone
+
+Use accent colors sparingly.
+
+The website should mainly feel monochrome, warm, architectural and premium.
+
+============================================================
+TYPOGRAPHY
+============================================================
+
+Use an elegant editorial serif for major headings.
+
+Preferred:
+
+Cormorant Garamond
+or
+DM Serif Display
+or
+Playfair Display
+
+Use:
+
+Inter
+Manrope
+or
+Plus Jakarta Sans
+
+for UI and body text.
+
+Use oversized typography.
+
+Examples:
+
+FIND YOUR
+NEXT ADDRESS.
+
+PROPERTY.
+PERSPECTIVE.
+POSSIBILITY.
+
+A HOME
+WORTH COMING HOME TO.
+
+YOUR NEXT
+CHAPTER STARTS HERE.
+
+Typography should have:
+
+- strong hierarchy
+- elegant letter spacing
+- large editorial display size
+- comfortable line height
+- excellent responsive scaling
+
+============================================================
+MEDIA / IMAGE DIRECTION
+============================================================
+
+Use high-quality real-estate imagery.
+
+Use suitable publicly accessible imagery from sources such as:
+
+Unsplash
+Pexels
+Pixabay
+
+Select visually consistent imagery.
+
+Required categories:
+
+- luxury apartment
+- modern villa
+- penthouse
+- architecture
+- living room
+- bedroom
+- kitchen
+- bathroom
+- balcony
+- city skyline
+- luxury exterior
+- nature
+- neighborhood
+- family lifestyle
+- investment property
+- commercial property
+
+Do NOT use obviously low-quality stock imagery.
+
+Do NOT use watermarked images.
+
+Do NOT use random unrelated photographs.
+
+Prefer architecture-focused imagery.
+
+Create centralized image data so images can easily be replaced.
+
+============================================================
+HERO VIDEO
+============================================================
+
+Create a cinematic real-estate video hero.
+
+Use a suitable publicly accessible luxury architecture/property video if available.
+
+If a reliable video source is unavailable, use an extremely high-quality property image with subtle cinematic motion.
+
+Hero video requirements:
+
+- autoplay
+- muted
+- loop
+- playsInline
+- object-fit: cover
+- poster image
+- fallback to image if video fails
+- responsive
+- no visible browser controls in default state
+
+Do not let external media failure break the site.
+
+============================================================
+CUSTOM CURSOR
+============================================================
+
+Desktop only.
+
+Create a subtle luxury custom cursor.
+
+Default:
+
+small circular cursor.
+
+Hover property:
+
+VIEW
+
+Hover gallery:
+
+EXPLORE
+
+Hover CTA:
+
+subtle magnetic movement.
+
+Disable on mobile/tablet.
+
+Do not allow custom cursor to interfere with accessibility.
+
+============================================================
+LOADING EXPERIENCE
+============================================================
+
+Create a short premium loading intro.
+
+Display:
+
+VÉRA REALTY
+
+PROPERTY.
+PERSPECTIVE.
+POSSIBILITY.
+
+Subtle progress line.
+
+Duration:
+
+approximately 0.8–1.2 seconds.
+
+Do not create a long loading screen.
+
+============================================================
+NAVIGATION
+============================================================
+
+Create a premium floating navbar.
+
+Left:
+
+VÉRA REALTY
+
+Navigation:
+
+BUY
+RENT
+PROPERTIES
+LOCATIONS
+INSIGHTS
+SELL WITH US
+
+Right:
+
+SAVED
+COMPARE
+CONTACT
+
+Primary CTA:
+
+TALK TO AN EXPERT
+
+Initial:
+
+transparent over hero.
+
+On scroll:
+
+dark translucent background
+backdrop blur
+subtle border
+slightly reduced height
+
+Mobile:
+
+animated full-screen navigation menu.
+
+Mobile navigation must work properly.
+
+============================================================
+HOMEPAGE
+============================================================
+
+Build the homepage as a visual storytelling experience.
+
+============================================================
+1. HERO
+============================================================
+
+Full-screen cinematic hero.
+
+Background:
+
+Luxury architecture/property video.
+
+Overlay:
+
+dark gradient
+subtle vignette
+subtle grain
+
+Hero text:
+
+VÉRA REALTY
+
+FIND YOUR
+NEXT ADDRESS.
+
+Supporting text:
+
+"Exceptional homes, meaningful spaces and opportunities worth discovering."
+
+Primary CTA:
+
+EXPLORE PROPERTIES
+
+Secondary CTA:
+
+TALK TO AN EXPERT
+
+Bottom-left:
+
+SCROLL TO EXPLORE
+
+Bottom-right:
+
+RESIDENTIAL
+LUXURY
+INVESTMENT
+
+Hero animation sequence:
+
+1. dark initial state
+2. logo appears
+3. video/image fades in
+4. small label reveals
+5. headline reveals line-by-line
+6. paragraph appears
+7. CTA buttons appear
+8. metadata appears
+9. scroll indicator begins subtle motion
+
+Use sophisticated easing.
+
+============================================================
+2. MAIN PROPERTY SEARCH
+============================================================
+
+Immediately after hero.
+
+Create an elegant, highly functional search panel.
+
+Top tabs:
+
+BUY
+RENT
+COMMERCIAL
+
+Fields:
+
+LOCATION
+PROPERTY TYPE
+PRICE RANGE
+BEDROOMS
+
+Button:
+
+SEARCH PROPERTIES
+
+Property type options:
+
+Apartment
+Villa
+House
+Penthouse
+Plot
+Commercial
+
+Search should actually filter demo property data.
+
+============================================================
+3. TRUST / QUICK STATS
+============================================================
+
+Create a premium horizontal stats strip.
+
+Use clearly marked editable demo values.
+
+Example:
+
+1,200+
+PROPERTIES
+
+35+
+LOCATIONS
+
+120+
+VERIFIED PARTNERS
+
+24/7
+ADVISORY
+
+Do not imply these are real numbers outside the demo.
+
+Animate numbers subtly when entering viewport.
+
+============================================================
+4. FEATURED PROPERTIES
+============================================================
+
+Heading:
+
+PROPERTIES
+WORTH DISCOVERING.
+
+Create visually rich property cards.
+
+Example demo properties:
+
+THE ARIA RESIDENCE
+₹2.45 Cr
+3 BHK
+2,100 sq ft
+Bangalore
+
+OAKWOOD VILLA
+₹4.80 Cr
+4 BHK
+3,800 sq ft
+Bangalore
+
+SKYLINE 42
+₹1.75 Cr
+3 BHK
+1,850 sq ft
+Mumbai
+
+THE TERRACE HOUSE
+₹3.20 Cr
+4 BHK
+2,900 sq ft
+Hyderabad
+
+These are fictional/demo properties.
+
+Every card:
+
+- property image
+- FOR SALE / FOR RENT badge
+- price
+- location
+- bedrooms
+- bathrooms
+- area
+- favorite icon
+- compare checkbox/button
+- VIEW PROPERTY
+- BOOK A VISIT
+
+Card interaction:
+
+Image zoom
+Details reveal
+Arrow movement
+Favorite animation
+Compare interaction
+
+Do NOT make cards look like ecommerce cards.
+
+Use premium editorial layouts.
+
+============================================================
+5. PROPERTY CATEGORIES
+============================================================
+
+Heading:
+
+EXPLORE BY PROPERTY TYPE.
+
+Create six visual categories:
+
+APARTMENTS
+VILLAS
+PENTHOUSES
+HOMES
+PLOTS
+COMMERCIAL
+
+Use large image compositions.
+
+Hover:
+
+image zoom
+title movement
+arrow reveal
+
+Click should filter the property listing page.
+
+============================================================
+6. LOCATION EXPLORER
+============================================================
+
+Heading:
+
+FIND YOUR PLACE.
+
+Create location cards:
+
+BANGALORE
+MUMBAI
+HYDERABAD
+DELHI NCR
+DUBAI
+
+These are fictional demo locations for the portfolio.
+
+Each card:
+
+large image
+property count
+starting price
+EXPLORE LOCATION
+
+Click should open/filter the property listing page.
+
+============================================================
+7. PROPERTY DISCOVERY EXPERIENCE
+============================================================
+
+Create a dedicated PROPERTIES section/page.
+
+At top:
+
+PROPERTIES
+
+"Explore spaces selected around the way you want to live."
+
+Add search bar.
+
+Filters:
+
+BUY / RENT
+
+LOCATION
+
+PROPERTY TYPE
+
+PRICE RANGE
+
+BEDROOMS
+
+BATHROOMS
+
+AREA
+
+FURNISHING
+
+AMENITIES
+
+SORT BY:
+
+RECOMMENDED
+PRICE LOW TO HIGH
+PRICE HIGH TO LOW
+NEWEST
+
+Filters must actually work with demo data.
+
+Display:
+
+XX PROPERTIES FOUND
+
+Grid/list toggle.
+
+Property cards update dynamically.
+
+Include empty state:
+
+NO PROPERTIES MATCH YOUR SEARCH.
+
+CLEAR FILTERS
+
+============================================================
+8. LIST + MAP VIEW
+============================================================
+
+Create a premium split-screen property discovery interface.
+
+Desktop:
+
+Left:
+property listing cards
+
+Right:
+interactive map-style visual.
+
+Do NOT require Google Maps API unless credentials are available.
+
+Instead create a polished map abstraction using:
+
+SVG / CSS / positioned markers.
+
+Markers should represent property locations.
+
+Interactions:
+
+Hover property → marker highlights.
+
+Click marker → property preview appears.
+
+Click property → property card becomes active.
+
+Click card → detail page.
+
+Mobile:
+
+map/list toggle.
+
+The interaction should feel realistic.
+
+============================================================
+9. FAVORITES
+============================================================
+
+Every property can be saved.
+
+Heart icon:
+
+♡ → ♥
+
+Use localStorage.
+
+Create a:
+
+SAVED PROPERTIES
+
+panel/page.
+
+Show:
+
+saved property count
+
+saved cards
+
+REMOVE
+
+VIEW PROPERTY
+
+EMPTY STATE:
+
+No saved properties yet.
+
+Explore properties to build your shortlist.
+
+============================================================
+10. PROPERTY COMPARISON
+============================================================
+
+Allow the user to compare up to 3 properties.
+
+Property cards include:
+
+COMPARE
+
+When selected:
+
+show floating compare bar.
+
+Example:
+
+COMPARE 2 PROPERTIES
+
+Click:
+
+COMPARE NOW
+
+Create a comparison table.
+
+Compare:
+
+Price
+Location
+Bedrooms
+Bathrooms
+Area
+Property Type
+Parking
+Amenities
+Furnishing
+Possession
+
+Highlight differences subtly.
+
+Provide:
+
+REMOVE
+VIEW PROPERTY
+BOOK A VISIT
+
+============================================================
+11. PROPERTY DETAIL PAGE
+============================================================
+
+This must be one of the most impressive pages.
+
+Clicking:
+
+VIEW PROPERTY
+
+opens a real route:
+
+/properties/:id
+
+Create a premium property detail page.
+
+Top:
+
+large image gallery.
+
+Property title:
+
+THE ARIA RESIDENCE
+
+Price:
+
+₹2.45 Cr
+
+Facts:
+
+3 BHK
+3 Bathrooms
+2,100 sq ft
+
+Location:
+
+Bangalore
+
+Buttons:
+
+SCHEDULE A VISIT
+
+TALK TO AN EXPERT
+
+SAVE PROPERTY
+
+COMPARE
+
+============================================================
+12. PROPERTY GALLERY
+============================================================
+
+Create an editorial gallery.
+
+Large main image.
+
+Supporting thumbnails.
+
+Different image sizes.
+
+Click image:
+
+fullscreen lightbox.
+
+Lightbox features:
+
+- next
+- previous
+- close
+- fullscreen
+- keyboard support
+- mobile support
+- image counter
+
+Example:
+
+03 / 14
+
+Hover:
+
+VIEW
+
+============================================================
+13. PROPERTY OVERVIEW
+============================================================
+
+Heading:
+
+OVERVIEW
+
+Create a premium description.
+
+Example:
+
+"A contemporary residence defined by natural light, considered proportions and effortless indoor-outdoor living."
+
+Clearly mark it as fictional demo content in source data.
+
+============================================================
+14. PROPERTY FACTS
+============================================================
+
+Create a premium details grid.
+
+BEDROOMS
+BATHROOMS
+BUILT-UP AREA
+PARKING
+PROPERTY TYPE
+FLOOR
+FURNISHING
+POSSESSION
+
+Use clean line separators.
+
+============================================================
+15. AMENITIES
+============================================================
+
+Heading:
+
+EVERYTHING
+IN ITS PLACE.
+
+Create:
+
+SWIMMING POOL
+FITNESS CENTER
+CLUBHOUSE
+PARKING
+SECURITY
+LANDSCAPE GARDEN
+CHILDREN'S AREA
+ELEVATOR
+POWER BACKUP
+SMART HOME
+
+These are demo property attributes.
+
+Keep the data editable per property.
+
+============================================================
+16. PROPERTY VIDEO
+============================================================
+
+Create:
+
+SEE IT IN MOTION.
+
+Large cinematic property walkthrough video.
+
+Use a suitable publicly accessible property/architecture video.
+
+If video cannot load:
+
+show premium fallback image.
+
+Default:
+
+muted cinematic playback.
+
+Include:
+
+PLAY TOUR
+
+CLICKING PLAY:
+show elegant video player controls.
+
+============================================================
+17. LOCATION INTELLIGENCE
+============================================================
+
+Heading:
+
+EVERYTHING IS CLOSER THAN YOU THINK.
+
+Create a map-style location section.
+
+Show fictional/demo travel times:
+
+Metro
+5 min
+
+Airport
+35 min
+
+School
+8 min
+
+Hospital
+10 min
+
+Shopping
+6 min
+
+Business District
+15 min
+
+Use editable data.
+
+Visual:
+
+map
+routes
+location markers
+
+Do not claim real-world accuracy.
+
+============================================================
+18. WHY THIS PROPERTY
+============================================================
+
+Create editorial section.
+
+Heading:
+
+WHY YOU'LL LOVE IT.
+
+Use five premium highlights:
+
+NATURAL LIGHT
+SPACIOUS LIVING
+PRIME LOCATION
+MODERN DESIGN
+LIFESTYLE AMENITIES
+
+Keep claims editable.
+
+============================================================
+19. MORTGAGE / EMI CALCULATOR
+============================================================
+
+Create a fully working frontend mortgage calculator.
+
+Inputs:
+
+PROPERTY PRICE
+DOWN PAYMENT
+LOAN TENURE
+INTEREST RATE
+
+Use sliders and numeric inputs.
+
+Calculate:
+
+LOAN AMOUNT
+
+ESTIMATED MONTHLY EMI
+
+TOTAL INTEREST
+
+TOTAL PAYMENT
+
+Use the standard EMI formula correctly.
+
+Display results with elegant animated number changes.
+
+Add disclaimer:
+
+"Demo estimate for illustration only. Actual rates and eligibility vary."
+
+============================================================
+20. AGENT SECTION
+============================================================
+
+Heading:
+
+MEET YOUR PROPERTY ADVISOR.
+
+Create an elegant agent card.
+
+Demo data:
+
+Arjun Mehta
+Senior Property Consultant
+
+Specializes in:
+
+Luxury Homes
+Residential Investments
+Premium Apartments
+
+Buttons:
+
+CALL
+
+WHATSAPP
+
+EMAIL
+
+Use clearly editable data.
+
+============================================================
+21. SCHEDULE A VISIT
+============================================================
+
+Create a premium appointment modal/page.
+
+Fields:
+
+PROPERTY
+NAME
+PHONE
+EMAIL
+PREFERRED DATE
+PREFERRED TIME
+MESSAGE
+
+CTA:
+
+SCHEDULE A VISIT
+
+Frontend behavior:
+
+submit
+show animated success state
+
+Example:
+
+REQUEST RECEIVED
+
+"Our property advisor will contact you shortly."
+
+Do not claim that an actual appointment has been booked.
+
+============================================================
+22. LEAD GENERATION
+============================================================
+
+Create:
+
+TALK TO AN EXPERT
+
+Form:
+
+Name
+Phone
+Email
+Interested In
+Location
+Budget
+Property Type
+Message
+
+CTA:
+
+TALK TO AN EXPERT
+
+On submit:
+
+show polished success state.
+
+Store demo submission locally if appropriate.
+
+============================================================
+23. SELL YOUR PROPERTY
+============================================================
+
+Create a major section:
+
+THINKING OF SELLING?
+
+Text:
+
+"Put your property in front of qualified buyers with a tailored marketing and advisory experience."
+
+CTA:
+
+LIST YOUR PROPERTY
+
+Create a modal/form:
+
+PROPERTY TYPE
+LOCATION
+AREA
+EXPECTED PRICE
+NAME
+PHONE
+EMAIL
+
+Submit:
+
+PROPERTY ENQUIRY RECEIVED
+
+This is frontend-only.
+
+============================================================
+24. PROPERTY VALUATION
+============================================================
+
+Create:
+
+WHAT IS YOUR PROPERTY WORTH?
+
+Inputs:
+
+LOCATION
+PROPERTY TYPE
+AREA
+BEDROOMS
+PROPERTY AGE
+CONDITION
+
+CTA:
+
+GET ESTIMATED VALUE
+
+After submission:
+
+show an animated demo valuation range.
+
+Clearly display:
+
+DEMO ESTIMATE
+
+"Actual property valuation requires professional assessment and current market data."
+
+Do not imply the result is a professional valuation.
+
+============================================================
+25. INVESTMENT SECTION
+============================================================
+
+Heading:
+
+INVEST WITH PERSPECTIVE.
+
+Create an editorial section explaining:
+
+Location
+Demand
+Rental potential
+Long-term considerations
+Property quality
+
+Create cards:
+
+RESIDENTIAL
+COMMERCIAL
+LAND
+LUXURY
+
+Do NOT promise guaranteed returns.
+
+Do NOT fabricate investment performance as fact.
+
+Use clearly labeled demo information.
+
+============================================================
+26. HOW IT WORKS
+============================================================
+
+Create a sticky storytelling section.
+
+Heading:
+
+FROM SEARCH
+TO KEYS.
+
+Stages:
+
+01
+DISCOVER
+
+Explore properties matching your needs.
+
+02
+SHORTLIST
+
+Save and compare your favorites.
+
+03
+VISIT
+
+Experience the property in person.
+
+04
+DECIDE
+
+Get expert guidance.
+
+05
+MOVE IN
+
+Start your next chapter.
+
+Use scroll-driven transitions.
+
+This should be a major animation showcase.
+
+============================================================
+27. MARKET INSIGHTS / JOURNAL
+============================================================
+
+Create:
+
+THE PROPERTY JOURNAL
+
+Articles:
+
+5 Things to Check Before Buying a Home
+
+How to Choose the Right Neighborhood
+
+A First-Time Buyer's Guide
+
+Apartment vs Villa: What Fits Your Lifestyle?
+
+Understanding Property Financing
+
+Create article cards with:
+
+image
+category
+title
+date
+READ ARTICLE
+
+Demo content only.
+
+============================================================
+28. TESTIMONIALS
+============================================================
+
+Heading:
+
+TRUSTED THROUGH
+THE JOURNEY.
+
+Create 3 elegant testimonial cards.
+
+Use clearly fictional DEMO testimonials.
+
+Do not present them as genuine customers.
+
+Display:
+
+★★★★★
+
+Name
+Location
+
+============================================================
+29. TRUST SECTION
+============================================================
+
+Create:
+
+PROPERTY
+WITH CONFIDENCE.
+
+Four elements:
+
+VERIFIED LISTINGS
+
+EXPERT GUIDANCE
+
+CLEAR COMMUNICATION
+
+DEDICATED SUPPORT
+
+Only present these as demo brand positioning unless verified.
+
+============================================================
+30. FAQ
+============================================================
+
+Create elegant FAQ accordion.
+
+Questions:
+
+How do I search for properties?
+
+Can I save properties?
+
+Can I compare properties?
+
+Can I schedule a property visit?
+
+How does the EMI calculator work?
+
+Can I list my property?
+
+Can I request a valuation?
+
+Can I speak with an advisor?
+
+Smooth open/close animation.
+
+============================================================
+31. FINAL CTA
+============================================================
+
+Create a huge cinematic closing section.
+
+Heading:
+
+FIND THE PLACE
+THAT MOVES YOU.
+
+Supporting:
+
+"Your next chapter starts with the right address."
+
+Buttons:
+
+EXPLORE PROPERTIES
+
+TALK TO AN EXPERT
+
+Use a cinematic architecture/property background.
+
+============================================================
+32. FOOTER
+============================================================
+
+VÉRA REALTY
+
+PROPERTY.
+PERSPECTIVE.
+POSSIBILITY.
+
+Navigation:
+
+BUY
+RENT
+PROPERTIES
+LOCATIONS
+INSIGHTS
+SELL WITH US
+CONTACT
+
+Tools:
+
+SAVED PROPERTIES
+COMPARE
+EMI CALCULATOR
+PROPERTY VALUATION
+
+Social:
+
+Instagram
+LinkedIn
+YouTube
+
+Legal:
+
+Privacy
+Terms
+Disclaimer
+
+============================================================
+ADVANCED ANIMATION SYSTEM
+============================================================
+
+Animation quality is extremely important.
+
+Use smooth premium motion throughout.
+
+Implement:
+
+- hero reveal
+- image reveal masks
+- line-by-line typography
+- scroll-triggered sections
+- staggered cards
+- image zoom
+- parallax
+- sticky storytelling
+- map marker animation
+- favorite interaction
+- compare interaction
+- filter transition
+- property detail transition
+- gallery/lightbox transition
+- booking modal animation
+- FAQ accordion
+- page transitions
+- CTA micro-interactions
+
+Use premium easing.
+
+Animation should feel:
+
+smooth
+controlled
+elegant
+slow
+high-end
+
+Do NOT use:
+
+bounce
+spin
+random rotations
+constant movement
+overly flashy transitions
+excessive blur
+neon effects
+
+The website should feel expensive because of the QUALITY of motion, not the amount.
+
+============================================================
+SCROLL EXPERIENCE
+============================================================
+
+Create:
+
+- smooth scrolling
+- scroll progress
+- subtle hero compression
+- image parallax
+- text reveal
+- sticky experience section
+- section transitions
+
+Do not make scrolling difficult.
+
+============================================================
+DESKTOP CUSTOM CURSOR
+============================================================
+
+Desktop only.
+
+Default:
+small circular cursor.
+
+Property:
+VIEW
+
+Gallery:
+EXPLORE
+
+Video:
+PLAY
+
+CTA:
+subtle magnetic movement.
+
+Never activate on mobile/tablet.
+
+============================================================
+RESPONSIVE DESIGN
+============================================================
+
+Design intentionally for:
+
+1440px+
+1280px
+1024px
+768px
+430px
+390px
+375px
+320px
+
+Desktop:
+
+spacious
+editorial
+large imagery
+multi-column layouts
+
+Tablet:
+
+balanced
+simplified interactions
+
+Mobile:
+
+custom layout, not scaled desktop.
+
+Mobile must have:
+
+- cinematic hero
+- readable typography
+- sticky or easily accessible search CTA
+- mobile filters
+- mobile property cards
+- map/list toggle
+- mobile gallery
+- mobile booking modal
+- mobile navigation
+- no horizontal overflow
+- touch-friendly controls
+
+============================================================
+MOBILE PROPERTY DISCOVERY
+============================================================
+
+On mobile:
+
+Top:
+
+SEARCH PROPERTIES
+
+Then:
+
+FILTERS
+
+Use a bottom-sheet style filter panel.
+
+Filters:
+
+Location
+Type
+Price
+Beds
+Baths
+Amenities
+
+Button:
+
+APPLY FILTERS
+
+Then:
+
+XX PROPERTIES
+
+Cards stack vertically.
+
+Add:
+
+MAP VIEW
+
+button.
+
+============================================================
+ACCESSIBILITY
+============================================================
+
+Implement:
+
+semantic HTML
+correct heading hierarchy
+accessible forms
+ARIA labels
+keyboard navigation
+visible focus states
+proper button states
+image alt text
+accessible dialogs
+accessible accordion
+
+Support:
+
+prefers-reduced-motion
+
+When reduced motion is enabled:
+
+- remove parallax
+- reduce transforms
+- simplify transitions
+- disable custom cursor
+
+============================================================
+PERFORMANCE
+============================================================
+
+Optimize for production.
+
+Use:
+
+- responsive images
+- lazy loading
+- optimized assets
+- code splitting where useful
+- efficient animations
+- video fallback
+- minimal dependencies
+
+Do not allow enormous media files to destroy page performance.
+
+Avoid layout shifts.
+
+============================================================
+SEO
+============================================================
+
+Title:
+
+Véra Realty | Property. Perspective. Possibility.
+
+Description:
+
+Discover exceptional homes, apartments, villas and investment properties with Véra Realty.
+
+Add:
+
+- meta description
+- Open Graph
+- social metadata
+- favicon
+- semantic HTML
+- property-detail metadata
+- structured-data-ready configuration
+
+============================================================
+DATA ARCHITECTURE
+============================================================
+
+Create reusable property data.
+
+Each property should contain:
+
+id
+title
+slug
+type
+status
+price
+location
+city
+bedrooms
+bathrooms
+area
+parking
+floor
+furnishing
+possession
+description
+amenities
+images
+video
+coordinates
+agent
+features
+
+Make it easy to add/remove properties.
+
+============================================================
+SEARCH / FILTER LOGIC
+============================================================
+
+Search must actually work.
+
+Implement:
+
+keyword/location search
+
+property type filter
+
+buy/rent filter
+
+price range
+
+bedroom count
+
+bathroom count
+
+amenities
+
+sorting
+
+Recommended
+Price Low-High
+Price High-Low
+Newest
+
+Results should update immediately.
+
+============================================================
+FAVORITES LOGIC
+============================================================
+
+Use localStorage.
+
+User can:
+
+save
+remove
+view saved
+
+State should persist after refresh.
+
+============================================================
+COMPARE LOGIC
+============================================================
+
+Allow:
+
+maximum 3 properties.
+
+Show:
+
+compare toolbar.
+
+Click:
+
+COMPARE NOW
+
+Open comparison page/modal.
+
+Comparison must actually work.
+
+============================================================
+BOOKING / VISIT LOGIC
+============================================================
+
+Schedule Visit:
+
+select property
+select date
+select time
+fill contact information
+submit
+success state
+
+No backend required.
+
+Use frontend state.
+
+============================================================
+FORMS
+============================================================
+
+All major forms need:
+
+- validation
+- required fields
+- accessible labels
+- loading state
+- success state
+- error state
+
+Do not allow invalid empty submissions.
+
+============================================================
+VISUAL RHYTHM
+============================================================
+
+Do not repeat the same section layout.
+
+Use:
+
+1. cinematic hero
+2. floating search panel
+3. trust strip
+4. editorial featured properties
+5. visual categories
+6. location cards
+7. full property discovery experience
+8. split list/map experience
+9. editorial storytelling
+10. property detail
+11. financing
+12. lead generation
+13. journal
+14. testimonials
+15. final cinematic CTA
+
+The site should feel like a complete product.
+
+============================================================
+CONTENT RULE
+============================================================
+
+VÉRA REALTY is fictional.
+
+All properties, prices, testimonials, statistics, agents, locations and offers are DEMO CONTENT.
+
+Do not imply that any fictional data is real.
+
+Keep demo information in data/config files.
+
+Make replacement easy.
+
+============================================================
+POLISH DETAILS
+============================================================
+
+Add tasteful:
+
+- hover states
+- focus states
+- active filter states
+- subtle dividers
+- animated underlines
+- elegant icon movement
+- image transitions
+- loading skeletons
+- empty states
+- error states
+- confirmation states
+
+Create skeleton loading for property data where useful.
+
+============================================================
+EMPTY STATES
+============================================================
+
+Create polished empty states for:
+
+No saved properties
+
+No comparison selected
+
+No search results
+
+No matching properties
+
+Example:
+
+NO PROPERTIES FOUND.
+
+Try adjusting your filters.
+
+CLEAR FILTERS
+
+============================================================
+ERROR STATES
+============================================================
+
+If an image/video fails:
+
+show graceful fallback.
+
+If a route doesn't exist:
+
+show premium 404 page.
+
+Example:
+
+THIS ADDRESS DOESN'T EXIST.
+
+Return to properties →
+
+============================================================
+404 PAGE
+============================================================
+
+Create a minimal cinematic 404 page.
+
+Large:
+
+404
+
+THIS ADDRESS
+DOESN'T EXIST.
+
+CTA:
+
+RETURN HOME
+
+============================================================
+PRODUCTION QUALITY
+============================================================
+
+After implementation:
+
+RUN THE WEBSITE.
+
+Inspect the actual rendered application.
+
+Check:
+
+- desktop
+- tablet
+- mobile
+
+Check console.
+
+Fix:
+
+- build errors
+- runtime errors
+- broken images
+- broken links
+- broken routes
+- missing assets
+- overflow
+- animation glitches
+- incorrect responsive behavior
+- inaccessible buttons
+- broken forms
+- incorrect calculations
+
+============================================================
+FINAL CREATIVE REVIEW
+============================================================
+
+After all functionality works, perform a visual refinement pass.
+
+Act as an award-winning creative director reviewing the website for a high-paying real-estate client.
+
+Do NOT add random features.
+
+Improve:
+
+Hero
+Typography
+Image selection
+Image cropping
+Spacing
+Negative space
+Property cards
+Search experience
+Map experience
+Property detail page
+Gallery
+EMI calculator
+Lead generation forms
+Scroll storytelling
+CTA hierarchy
+Mobile experience
+
+Remove anything that looks:
+
+generic
+cheap
+template-like
+AI-generated
+repetitive
+over-designed
+visually noisy
+
+Make the site feel:
+
+quiet luxury
+modern architecture
+premium property
+trustworthy
+high-converting
+
+============================================================
+FIRST 5 SECONDS
+============================================================
+
+The first five seconds should be exceptional.
+
+Visitor sees:
+
+CINEMATIC PROPERTY VIDEO
+
+↓
+
+VÉRA REALTY
+
+↓
+
+FIND YOUR
+NEXT ADDRESS.
+
+↓
+
+EXPLORE PROPERTIES
+
+↓
+
+TALK TO AN EXPERT
+
+Then the search experience naturally appears.
+
+============================================================
+MOST IMPORTANT PRODUCT FLOW
+============================================================
+
+Make this flow exceptionally polished:
+
+SEARCH
+
+↓
+
+FILTER
+
+↓
+
+DISCOVER PROPERTY
+
+↓
+
+SAVE
+
+↓
+
+COMPARE
+
+↓
+
+VIEW PROPERTY
+
+↓
+
+EXPLORE PHOTOS
+
+↓
+
+CHECK LOCATION
+
+↓
+
+CALCULATE EMI
+
+↓
+
+CONTACT AGENT
+
+↓
+
+SCHEDULE A VISIT
+
+This is the central product experience.
+
+============================================================
+FINAL INSTRUCTION
+============================================================
+
+DO NOT STOP AFTER CREATING THE FIRST VERSION.
+
+BUILD THE COMPLETE WEBSITE.
+
+RUN IT.
+
+TEST IT.
+
+INSPECT IT.
+
+FIX IT.
+
+POLISH IT.
+
+MAKE ALL IMPORTANT INTERACTIONS ACTUALLY WORK.
+
+Make the final website visually impressive enough to present directly to a paying real-estate client.
+
+The result must feel like:
+
+A PREMIUM DIGITAL REAL-ESTATE PRODUCT,
+NOT A TEMPLATE.
+
+BUILD IT NOW.

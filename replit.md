@@ -1,44 +1,44 @@
-# [Project name]
+# VÉRA REALTY
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A fictional premium real-estate discovery portfolio for exploring, saving, comparing, and enquiring about demo properties.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- `pnpm --filter @workspace/vera-realty run dev` — run the Véra Realty web app
+- `pnpm --filter @workspace/vera-realty run typecheck` — typecheck the web app
+- `pnpm --filter @workspace/vera-realty run build` — create a production build
+- No API service or database is required for this fictional client-side demo
 
 ## Stack
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- pnpm workspaces, React, TypeScript, and Vite
+- Client-side navigation with Wouter
+- Browser local storage for saved homes, comparisons, and demo enquiries
+- Responsive CSS, local image assets, and reduced-motion-aware interactions
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/vera-realty/src/App.tsx` — routed pages and interactive discovery flows
+- `artifacts/vera-realty/src/data/properties.ts` — editable fictional property listings and filter options
+- `artifacts/vera-realty/src/index.css` — brand styling, responsive layout, and motion preferences
+- `artifacts/vera-realty/public/` — local architectural imagery and site icon
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Property search, saved properties, comparison, calculators, and forms are client-side demo features; forms do not contact an agent or create bookings.
+- All listings, location details, statistics, agents, testimonials, estimates, and article content are fictional demonstration data.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Visitors can search and filter listings, inspect property details and illustrative locations, save and compare up to three homes, estimate loan payments, and submit local-only demo enquiries.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Preserve the quiet-luxury editorial direction and clearly identify all VÉRA REALTY content and form behavior as fictional demo material.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Demo enquiries are stored only in the current browser's local storage; nothing is transmitted.
 
 ## Pointers
 

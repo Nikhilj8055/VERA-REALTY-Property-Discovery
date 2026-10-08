@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "VÉRA REALTY"
+description = "A premium property discovery and lead-generation experience for an editorial real-estate portfolio brand. Explore, compare, save, and schedule visits for distinctive homes and spaces."
+version = "1.0.0"
+id = "artifacts/vera-realty"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20592
+
+[services.development]
+run = "pnpm --filter @workspace/vera-realty run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/vera-realty", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/vera-realty/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20592"
+BASE_PATH = "/"
